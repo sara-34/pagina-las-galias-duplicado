@@ -647,7 +647,7 @@ footer{
 /****************MEDIA******************************************************************/
 
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
 
     .enlaces-nav{
         display: none;
