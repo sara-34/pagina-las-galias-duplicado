@@ -647,7 +647,7 @@ footer{
 /****************MEDIA******************************************************************/
 
 
-@media(max-width: 640px) {
+@media(max-width: 640px){
 
     .enlaces-nav{
         display: none;
@@ -700,7 +700,7 @@ footer{
     }
 
     #apartamento{
-        width: 80%;
+        width: 100%;
     }
 
     .logo-portal{
@@ -738,6 +738,7 @@ footer{
     }
     
   }
+
 
 
 
