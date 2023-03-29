@@ -8,12 +8,27 @@
     --font-family: 'Roboto', sans-serif;
     --font-family2: 'Roboto Condensed', sans-serif;
     --color: #CE253A;
+    --color-gris-claro:#7a7a7a44;
+    --color-primary: #CE253A;
+    --color-secondary: #54595F;
+    --color-text: #7A7A7A;
+    --color-accent: #CE253A;
+    --color-4020e95: #C70B10;
+    --color-eeb8ad2: #383838;
+    --color-9b2fcbe: #CE253A;
+    --color-21cb02a: #CE253AAB;
+    --background-color: rgba(128, 128, 128, 0.112);
 }
+
 
 /*Barra de navegacion*/
 header{
     width: 100%;
     height: 80px;
+}
+
+#hamburguesa{
+    display: none;
 }
 .nav-bar{
     display: flex;
@@ -33,6 +48,13 @@ header{
 
 .enlaces-nav{
     margin-left: 280px;
+    cursor: pointer;
+}
+
+.enlaces-nav ul li:hover{
+
+    color: white;
+    text-decoration: underline;
 }
 
 .enlaces-nav ul{
@@ -93,18 +115,633 @@ header{
 .imagen-principal img{
     width: 100%;
 }
+
 .iconos img{
-    display: block;
+    display: flex;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    margin-top: 30px;
 }
 .iconos{
+  position: fixed;
+  margin-top: 100px;
+  right:0;
+}
+/*Buscador Hogares*/
+
+.botones{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    z-index: auto;
+    justify-content: center;
+
+}
+
+.botones button{
+    width: 310px;
+    height: 40px;
+}
+
+.botones .blanco {
+    color: var(--color-text);
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+
+.botones .rojo {
+    color: white;
+    background-color: var(--color);
+    font-weight: bold;
+    border: none;
+}
+
+.opciones-cuidades{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 380px;
+    width: 560px;
     height: 80px;
+    background-color:var(--color-gris-claro);
+}
+#opcion-cuidades{
+    width: 165px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+#municipios-op{
+    width: 165px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: var(--color-gris-claro);
+    color: var(--color-text);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.boton-buscar button{
+    width: 165px;
+    height: 35px;
+    background-color: var(--color-text);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+/*Experiencia*/
+
+.experiencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.112);
+}
+
+.enunciado1 p:hover{
+    color: var(--color-4020e95);
+    text-decoration: underline;
+}
+
+.enunciado2 p:hover{
+    color: var(--color-4020e95);
+    text-decoration: underline;
+}
+
+.enunciado3 p:hover{
+    color: var(--color-4020e95);
+    text-decoration: underline;
+}
+
+#one:hover{
+    color: var(--color-4020e95);
+
+}
+
+.enunciado1 p{
+    display: inline-block;
+    font-family: var(--font-family);
+    color: #7A7A7A;
+    font-size: 30px;
+}
+.enunciado2 p{
+    display: inline-block;
+    font-family: var(--font-family);
+    color: #7A7A7A;
+    font-size: 30px;
+}
+.enunciado3 p{
+    display: inline-block;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #7A7A7A;
+    font-size: 30px;
+}
+#one{
+    font-size: 90px;
+    font-family: var(--font-family);
+    color: #7A7A7A;
+}
+
+/*Cards*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 5px;
+}
+
+.card1 img{
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.boton-proyecto{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-proyecto button:hover{
+    background-color: #808081fb;
+}
+
+.boton-proyecto button{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+.boton-proyecto img{
+    width: 15px;
+    margin: 3px 0 0 3px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 20px 80px;
+    width: 50%;
+    border-bottom: 1px solid;
+    font-family: var(--font-family);
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: var(--font-family2);
+    border-bottom: 1px solid;
+    width: 50%;
+    font-size: 14px;
+    margin: 20px 80px;
+    color: #54595F;
+}
+
+.parrafo{
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0;
+    font-family: var(--font-family2);
+}
+
+.parrafo h3{
+    color: #CE253A;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-apart1{
+    margin: 30px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#apartamento{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+
     
 }
+
+.logo-portal img{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 300px;
+    left: 100px;
+}
+
+.logo-portal button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 280px;
+    right: 5px;
+    background-color: #CE253A;
+    border: none;
+    color: white;
+
+}
+
+.info-apart{
+    text-align: center;
+    margin: 10px 45px;
+    width: 70%;
+    border-bottom: 1px solid;
+}
+
+.info-apart p img{
+    width: 10px;
+}
+
+.descripcion p img{
+    width: 15px;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.boton-ver-proyecto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.boton-ver-proyecto button:hover{
+    background-color: #DFE0E1;
+}
+
+.boton-ver-proyecto button{
+    width: 180px;
+    height: 40px;
+    background-color: #CE253A;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#flecha-button{
+    width: 15px;
+}
+
+
+
+.informacion-card{
+    margin-top: -100px;
+    width: 300px;
+    height: 200px;
+    border-radius: 0 0 30px 30px;
+    background-color: white;
+
+}
+
+.info-citas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #DFE0E1;
+    height: 250px;
+    background-image: url(https://galias.com.co/wp-content/uploads/2022/04/foto-gris_Mesa-de-trabajo-1-scaled.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.citas h4{
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+
+}
+
+.citas h3{
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+
+.bton-cita button:hover{
+    background-color: #CE253A;
+}
+
+.bton-cita button{
+    width: 140px;
+    height: 40px;
+    background-color: var(--color-text);
+    color: white;
+    border: none;
+    font-weight: bold;
+
+}
+
+/*Formulario*/
+
+
+
+.informacion{
+    text-align: center;
+}
+
+.informacion h2{
+    font-family: var(--font-family);
+}
+
+.informacion h3{
+    font-family: var(--font-family);
+    color: #CE253A;
+    font-size: 30px;
+}
+
+
+
+.formulario{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+}
+
+.formulario form input{
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: var(--color-text);
+}
+
+.llenar form{
+    display: grid;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.llenar form select{
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 40px;
+    color: var(--color-text);
+}
+
+.llenar form label{
+    color: var(--color-text);
+}
+
+
+
+.aceptar{
+    margin-top: 15px;
+}
+
+.enviar{
+    margin-top: 15px;
+}
+
+.confirm{
+    margin-top: 10px;
+    gap: 170px;
+    color: var(--color-text);
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aceptar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54595F;
+    gap: 20px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enviar button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #CE253A;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Footer*/
+
+footer{
+    font-family: var(--font-family);
+}
+
+.informacion-contacto{
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: var(--background-color);
+}
+
+.logo-galias{
+    margin-top: 50px;
+}
+
+.iconos-redes{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 10px;
+}
+.iconos-redes img{
+    width: 30px;
+}
+
+.contacto{
+    margin-top: 50px;
+}
+
+.contacto h2{
+    border-bottom: 1px solid;
+
+}
+.contacto ul li{
+    margin-top:  10px;
+    list-style: none;
+    color: #383838;
+}
+
+.proyectos{
+    margin-top: 50px;
+}
+
+.proyectos h2{
+    border-bottom: 1px solid;
+}
+.proyectos ul li{
+    margin-top:  10px;
+    list-style: none;
+}
+
+.proyectos ul li a{
+    text-decoration: none;
+    color: #383838;
+}
+
+.conoce-mas{
+    margin-top: 50px;
+}
+
+.conoce-mas h2{
+    border-bottom: 1px solid;
+}
+.conoce-mas ul li{
+    margin-top:  10px;
+    list-style: none;
+}
+
+.conoce-mas ul li a{
+    text-decoration: none;
+    color: #383838;
+}
+
+.botonesl button{
+    margin-left: 5px;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #CE253A;
+    border: none;
+    border-radius: 5px;
+}
+
+/****************MEDIA******************************************************************/
+
+
+@media (max-width: 640px) {
+
+    .enlaces-nav{
+        display: none;
+    }
+
+    .clientes{
+        display: none;
+    }
+
+    .nav-bar #hamburguesa{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin:20px 50px;
+    }
+
+    .opciones-cuidades{
+        margin-left: 50px;
+    }
+
+    .botones{
+        margin-right: 11px;
+    }
+
+    .experiencia{
+        display: block;
+        text-align: center;
+        height: 100%;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .titulo{
+        margin-left: 150px;
+
+    }
+    .subtitulo{
+        margin-left: 150px;
+
+    }
+
+    .boton-proyecto{
+        margin-bottom: 30px;
+    }
+
+    .cards-container{
+        display: block;
+    }
+
+    #apartamento{
+        width: 100%;
+    }
+
+    .logo-portal{
+        margin-left: 150px;
+    }
+
+    .informacion-card{
+        margin-left: 120px ;
+    }
+
+    .info-citas{
+        gap: 30px;
+    }
+
+    .informacion-contacto{
+        display: block;
+        height: 100%;
+    }
+
+    .logo-galias{
+
+        text-align: center;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+
+    .proyectos{
+        text-align: center;
+    }
+
+    .conoce-mas{
+        text-align: center;
+    }
+    
+  }
+
+
+
+
 
 
 
