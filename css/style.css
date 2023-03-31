@@ -129,6 +129,11 @@ header{
 }
 /*Buscador Hogares*/
 
+.container-botones{
+    display: block;
+    width: 100%;
+
+}
 .botones{
     display: flex;
     justify-content: center;
@@ -136,7 +141,7 @@ header{
 }
 
 .botones button{
-    width: 310px;
+    width: 295px;
     height: 40px;
 }
 
@@ -158,8 +163,8 @@ header{
     display: flex;
     justify-content: center;
     gap: 12px;
-    margin-left: 380px;
-    width: 560px;
+    margin: auto;
+    width: 590px;
     height: 80px;
     background-color:var(--color-gris-claro);
 }
@@ -647,7 +652,7 @@ footer{
 /****************MEDIA******************************************************************/
 
 
-@media(max-width: 640px){
+@media (max-width: 640px){
 
     .enlaces-nav{
         display: none;
@@ -666,6 +671,7 @@ footer{
 
     .opciones-cuidades{
         margin-left: 50px;
+        width: 87.6%;
     }
 
     .botones{
@@ -738,6 +744,230 @@ footer{
     }
     
   }
+
+  @media (max-width: 768px){
+
+    .enlaces-nav{
+        display: none;
+    }
+
+    .clientes{
+        display: none;
+    }
+
+    .nav-bar #hamburguesa{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin:20px 50px;
+    }
+
+    
+
+    .botones{
+        margin-right: 11px;
+    }
+
+    .experiencia{
+        display: block;
+        text-align: center;
+        height: 100%;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .titulo{
+        margin-left: 150px;
+
+    }
+    .subtitulo{
+        margin-left: 150px;
+
+    }
+
+    .boton-proyecto{
+        margin-bottom: 30px;
+    }
+
+    .cards-container{
+        display: block;
+    }
+
+    #apartamento{
+        width: 100%;
+    }
+
+    .logo-portal{
+        margin-left: 150px;
+    }
+
+    .informacion-card{
+        margin-left: 120px ;
+    }
+
+    .info-citas{
+        gap: 30px;
+    }
+
+    .informacion-contacto{
+        display: block;
+        height: 100%;
+    }
+
+    .logo-galias{
+
+        text-align: center;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+
+    .proyectos{
+        text-align: center;
+    }
+
+    .conoce-mas{
+        text-align: center;
+    }
+
+  }
+
+  @media(max-width: 380px){
+
+    .enlaces-nav{
+        display: none;
+    }
+
+    .imagen-principal img{
+        width: 100%;
+    }
+
+    .clientes{
+        display: none;
+    }
+
+    .nav-bar #hamburguesa{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin:20px 50px;
+    }
+
+    .opciones-cuidades{
+        margin: auto;
+        width: 95.5%;
+    }
+
+
+    #opcion-cuidades{
+        width: 100px;
+
+    }
+
+    #municipios-op{
+        width: 100px;
+    }
+
+    .boton-buscar button{
+        width: 100px;
+    }
+
+    
+
+    .botones{
+        margin-right: 11px;
+    }
+
+    .experiencia{
+        display: block;
+        text-align: center;
+        height: 100%;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .titulo{
+        margin-left: 80px;
+
+    }
+    .subtitulo{
+        margin-left: 80px;
+
+    }
+
+    .boton-proyecto{
+        margin-bottom: 30px;
+    }
+
+    .cards-container{
+        display: block;
+    }
+
+    #apartamento{
+        width: 100%;
+    }
+
+    .logo-portal{
+        margin-left: 20px;
+    }
+
+    .informacion-card{
+        margin-left: 20px ;
+    }
+
+    .info-citas{
+        gap: 30px;
+    }
+
+    .info-citas h3{
+        font-size: 16px;
+    }
+
+    .informacion-contacto{
+        display: block;
+        height: 100%;
+    }
+
+    .logo-galias{
+
+        text-align: center;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+
+    .proyectos{
+        text-align: center;
+    }
+
+    .conoce-mas{
+        text-align: center;
+    }
+
+    .formulario form input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .confirm{
+        gap: 30px;
+    }
+
+    .aceptar{
+        margin-left: 20px;
+    }
+
+  }
+
+
+
+  
 
 
 
